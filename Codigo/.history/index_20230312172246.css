@@ -1,0 +1,8 @@
+.img_logo_header {
+	flex: 1;
+	margin: 5px;
+	padding: 0 0px;
+	background: rgba(160, 247, 0, 0);
+	text-align: center;
+	font-size: 1.5em;
+}
