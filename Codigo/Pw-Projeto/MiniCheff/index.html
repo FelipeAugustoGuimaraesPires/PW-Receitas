@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <main>
+            <nav>
+                <div class="header">
+                    <div class="LogoDoSite">
+                        <img src="imag/image-removebg-preview (1).png" class="img_logo_header" alt="Logo do Site">
+                    </div>
+                    <button class="btn_icon_header" id="headerHamburg">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <div class="navigation_header">
+
+                        <a href="#" class="Receitas">Receitas</a>
+                        <a href="#" class="Videos">Videos</a>
+                        <a href="#" class="Blogs">Blogs</a>
+                        <a href="#" class="Criadores">Criadores</a>
+
+                    </div>
+                    <div class="search_box">
+                        <input type="text" class="search_text" placeholder="Pesquisar...">
+                        <a class="search_btn">
+                            <svg class="LupaPreta" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                            <svg class="Lupa1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <div class="navigation_header2">
+                        <button id="botao_cadastro">
+                            <div class="cadastro">
+                                <svg class="imgcadastro" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                    <path fill-rule="evenodd"
+                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                </svg>
+                                <a href="#" class="Cadastre-se">Login</a>
+                            </div>
+                        </button>
+
+                        <button class="botao_login">
+                            <div class="container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                                <a href="#" class="Entrar">Criar conta</a>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div id="popup_wrapper" class="popup_wrapper">
+                    <div id="popup" class="popup">
+                        <div id="popup_close" class="popup_close"><i class="bi bi-x-circle-fill"></i></div>
+                        <div id="popup_content" class="popup_content">
+                            <h1>Login</h1>
+                            <label>Email</label>
+                            <input type="text" id="cadastrolinha" />
+                            <i class="bi bi-envelope-fill" id="emailEnv"></i>
+                            <label>Senha</label>
+                            <input type="password" id="senha" />
+                            <i class="bi bi-eye" id="olhoaberto" onclick="mostrarSenha()"></i>
+                            <button id="BtConfirmar">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="overlay" id="myNav">
+
+                        <div class="overlay-content">
+                            <div i class="bi bi-person-circle" id="logarcont"></i>
+                                <a2 href="#" class="Receitas">Olá.</a2>
+                                <a2 href="#" class="Receitas">Faça seu login</a2>
+                            </div>
+
+                            <a1 href="javascript:void(0)" class="clossebtn" oneclick="closeNav" ()>&times;</a1>
+                            <li><a href="#" class="Receitas">Receitas</a></li>
+                            <li><a href="#" class="Videos">Videos</a></li>
+                            <li><a href="#" class="Blogs">Blogs</a></li>
+                            <li><a href="#" class="Criadores">Criadores</a></li>
+                        </div>
+
+                    </div>
+
+
+                    <div class="Botao_do_X">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+            </nav>
+    </header>
+
+    <div class="linhas">
+        
+        <span>Receitas em Alta</span>
+        
+    </div>
+
+    <div class="carrossel">
+        <div class="slide">
+            <img src="imag/file3.jpg" alt="Receita 1">
+            <div class="nome-receita">File a parmegiana </div>
+        </div>
+        <div class="slide">
+            <img src="imag/kare.jpg" alt="Receita 2">
+            <div class="nome-receita">Kare-Katsu</div>
+        </div>
+        <div class="slide">
+            <img src="imag/frango-xadrez.jpeg" alt="Receita 3">
+            <div class="nome-receita">Frango xadrez </div>
+        </div>
+        <div class="slide">
+            <img src="imag/bolinho.webp" alt="Receita 1">
+            <div class="nome-receita">Bolinho 4</div>
+            <div class="slide">
+                <img src="imag/bolinho.webp" alt="Receita 1">
+                <div class="nome-receita">Bolinho 5</div>
+            </div>
+
+            <a class="prev" onclick="mudarSlide(-1)">&#10094;</a>
+            <a class="next" onclick="mudarSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <title>Minhas Receitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <div class="receitasAbaixo">
+       
+            <div class="Outras">
+                <span1>Outras tambem compartilhadas </span1>
+            </div>
+
+           
+
+                
+    </div>
+
+    <div class="grid-container">
+        <div class="receita">
+            <img class="imagem-receita" src="imag/cagamole.jpg" alt="Imagem da Receita 1">
+            <div class="nome-receita">Guacamole</div>
+        </div>
+
+        <div class="receita">
+            <img class="imagem-receita" src="imag/seviche].jpeg" alt="Imagem da Receita 2">
+            <div class="nome-receita">Ceviche</div>
+        </div>
+
+        <div class="receita">
+            <img class="imagem-receita" src="imag/estrogonofe.jpeg" alt="Imagem da Receita 3">
+            <div class="nome-receita">Estrogonofe</div>
+        </div>
+
+        <div class="receita">
+            <img class="imagem-receita" src="imag/Batata assada à italiana.jpg" alt="Imagem da Receita 4">
+            <div class="nome-receita">Batata assada à italiana</div>
+        </div>
+
+        <div class="receita">
+            <img class="imagem-receita" src="imag/Risoto Integral.jpg" alt="Imagem da Receita 5">
+            <div class="nome-receita">Risoto Integral</div>
+        </div>
+
+        <div class="receita">
+            <img class="imagem-receita" src="imag/Escondidinho de Carne.jpeg" alt="Imagem da Receita 6">
+            <div class="nome-receita">Escondidinho de Carne</div>
+        </div>
+
+        <div class="receita">
+            <img class="imagem-receita" src="imag/Arroz Cremoso.jpg" alt="Imagem da Receita 7">
+            <div class="nome-receita">Arroz Cremoso</div>
+        </div>
+
+        <div class="receita">
+            <img class="imagem-receita" src="imag/Salada Refrescante.jpeg" alt="Imagem da Receita 8">
+            <div class="nome-receita">Salada Refrescante</div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="Sobremesas">Sobremesas</div> 
+
+
+    <div class="grid-container">
+        <div class="receita">
+          <img class="imagem-receita" src="imag/Cheesecake.jpeg" alt="Cheesecake">
+          <div class="nome-receita">Cheesecake</div>
+        </div>
+  
+        <div class="receita">
+          <img class="imagem-receita" src="imag/Torta de Limão.jpeg" alt="Torta de Limão">
+          <div class="nome-receita">Torta de Limão</div>
+        </div>
+  
+        <div class="receita">
+          <img class="imagem-receita" src="imag/Mousse de Chocolate.jpeg" alt="Mousse de Chocolate">
+          <div class="nome-receita">Mousse de Chocolate</div>
+        </div>
+  
+        <div class="receita">
+          <img class="imagem-receita" src="imag/Pavê de Morango.webp" alt="Pavê de Morango">
+          <div class="nome-receita">Pavê de Morango</div>
+        </div>
+      </div>
+
+
+    <br></br>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Sobre</h6>
+                    <p class="text-justify">Descubra </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categorias</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Receitas</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Videos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Outros</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Sobre nós</a></li>
+                        <li><a href="">Nos contate</a></li>
+                        <li><a href="">Contribuintes</a></li>
+                        <li><a href="">Politica de privacidade</a></li>
+                        <li><a href="">Sites relacionados</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <br></br>
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by Gabriel Aron e Felipe
+                        Augusto.
+                        <br></br>
+                    <div id="textoTodo">
+                        <a id="texto" href="#">O MiniCheff Receitas é um site especializado em compartilhar receitas
+                            culinárias de forma fácil e acessível para todos. O site oferece uma grande variedade de
+                            receitas para diferentes tipos de pratos, desde aperitivos até sobremesas, incluindo pratos
+                            vegetarianos e veganos.
+
+                            Além disso, o MiniCheff Receitas oferece dicas de cozinha para iniciantes e pessoas
+                            experientes, bem como informações sobre ingredientes e técnicas culinárias. O site é
+                            atualizado regularmente com novas receitas e conteúdo para garantir que os usuários sempre
+                            tenham acesso às melhores e mais recentes informações.
+
+                            O site também conta com uma comunidade de usuários que compartilham suas próprias receitas e
+                            experiências culinárias, tornando-o um ótimo lugar para aprender, compartilhar e se conectar
+                            com outros amantes da culinária. No geral, o MiniCheff Receitas é uma excelente opção para
+                            quem busca inspiração e ideias para cozinhar pratos deliciosos em casa.</a>.
+                        </p>
+                    </div>
+                    <br></br>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="bi bi-whatsapp"></i></a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
