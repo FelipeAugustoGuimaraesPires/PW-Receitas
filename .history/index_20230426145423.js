@@ -71,16 +71,19 @@ closeMenuBtn.addEventListener('click', () => {
   menuContainer.style.display = 'none';
 });
 
-const popup2 = document.querySelector('#popup2');
-const fecharPopup = () => {
-  popup2.style.display = 'none';
-};
+const popup2 = document.getElementById('popup2');
+const fecharPopup2Button = document.querySelector('.popup_close');
+const enviarReceitaButton = document.querySelector('#enviarReceitaBtn');
 
-function enviarReceita() {
-  alert("Receita enviada com sucesso!");
-  fecharPopup();
-}
+fecharPopup2Button.addEventListener('click', () => {
+  popup2.style.display = 'none';
+});
 
 function abrirPopup2() {
   popup2.style.display = 'block';
 }
+
+enviarReceitaButton.addEventListener('click', () => {
+  alert('Receita enviada com sucesso!');
+  fecharPopup2Button.click();
+});

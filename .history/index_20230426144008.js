@@ -2,41 +2,48 @@ const button = document.getElementById('botao_cadastro');
 const popup = document.querySelector('.popup_wrapper');
 const closeButton = document.querySelector('.popup_close');
 
-button.addEventListener('click', abrirPopup);
+
+button.addEventListener('click', abrirPopup)
 
 closeButton.addEventListener('click', () => {
-  popup.style.display = 'none';
+    popup.style.display = 'none';
 });
 
 function abrirPopup() {
-  popup.style.display = 'block';
-}
+    popup.style.display = 'block';
+};
+
+
 
 function mostrarSenha() {
-  var inputPass = document.getElementById('senha');
-  var btnShowPass = document.getElementById('olhoaberto');
+    var inputPass = document.getElementById('senha')
+    var btnShowPass = document.getElementById('olhoaberto')
 
-  if (inputPass.type === 'password') {
-    inputPass.type = 'text';
-    btnShowPass.classList.replace('bi-eye', 'bi-eye-slash');
-  } else {
-    inputPass.type = 'password';
-    btnShowPass.classList.replace('bi-eye-slash', 'bi-eye');
-  }
+    if (inputPass.type === 'password') {
+        inputPass.setAttribute('type', 'text')
+        btnShowPass.classList.replace('bi-eye', 'bi-eye-slash')
+    } else {
+        inputPass.setAttribute('type', 'password')
+        btnShowPass.classList.replace('bi-eye-slash', 'bi-eye')
+    }
+
 }
 
-const button2 = document.getElementById('headerHamburg');
-const menu = document.getElementById('myNav');
+
+
+const button2 = document.getElementById("headerHamburg");
+const menu = document.getElementById("myNav");
 
 function toggleMenu() {
-  menu.classList.toggle('show');
+  menu.classList.toggle("show");
 }
 
-button2.addEventListener('click', toggleMenu);
+button2.addEventListener("click", toggleMenu);
 
 function closeNav() {
-  menu.classList.remove('show');
+  menu.classList.remove("show");
 }
+
 
 let posicaoInicial = 0;
 const slidesPorVez = 3;
@@ -59,6 +66,7 @@ function mudarSlide(direcao) {
   }
 }
 
+
 const menuBtn = document.querySelector('#headerHamburg');
 const menuContainer = document.querySelector('.menu-container');
 const closeMenuBtn = document.querySelector('#closeMenuBtn');
@@ -71,16 +79,17 @@ closeMenuBtn.addEventListener('click', () => {
   menuContainer.style.display = 'none';
 });
 
-const popup2 = document.querySelector('#popup2');
-const fecharPopup = () => {
-  popup2.style.display = 'none';
-};
-
-function enviarReceita() {
-  alert("Receita enviada com sucesso!");
-  fecharPopup();
-}
 
 function abrirPopup2() {
-  popup2.style.display = 'block';
+  document.getElementById("popup2").style.display = "block";
+}
+
+function fecharPopup2() {
+  document.getElementById("popup2").style.display = "none";
+}
+
+function enviarReceita2() {
+  // aqui você pode adicionar o código para enviar a receita para algum servidor ou armazená-la em algum lugar
+  alert("Receita enviada com sucesso!");
+  fecharPopup();
 }

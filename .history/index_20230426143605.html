@@ -318,41 +318,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <button type="button" class="btn btn-primary" onclick="abrirPopup2()">Envie sua Receita</button>
+                    <button type="button" class="btn btn-primary">Envie sua Receita</button>
                     <div id="popup2" class="popup2">
-                        <div class="popup-content2">
-                            <span class="close2" onclick="fecharPopup()">&times;</span>
-                            <h2>Preencha os campos abaixo para enviar sua receita:</h2>
-                            <div class="form-group2">
-                                <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome">
-                            </div>
-                            <div class="form-group2">
-                                <label for="email">E-mail:</label>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div class="form-group2">
-                                <label for="tipo_receita">Tipo de Receita:</label>
-                                <select id="tipo_receita" name="tipo_receita">
-                                    <option value="salgados">Salgados</option>
-                                    <option value="doces">Doces</option>
-                                    <option value="sopas">Sopas</option>
-                                    <option value="drinks">Drinks</option>
-                                    <option value="bebidas">Bebidas</option>
-                                </select>
-                            </div>
-                            <div class="form-group2">
-                                <label for="nome_receita">Nome da Receita:</label>
-                                <input type="text" id="nome_receita" name="nome_receita">
-                            </div>
-                            <div class="form-group2">
-                                <label for="receita">Receita:</label>
-                                <textarea id="receita" name="receita"></textarea>
-                            </div>
-                            <button type="button" class="btn btn-primary" onclick="enviarReceita()">Enviar</button>
+                        <div class="popup-content">
+                          <span class="close" onclick="fecharPopup()">&times;</span>
+                          <h2>Preencha os campos abaixo para enviar sua receita:</h2>
+                          <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="tipo_receita">Tipo de Receita:</label>
+                            <select id="tipo_receita" name="tipo_receita">
+                              <option value="salgados">Salgados</option>
+                              <option value="doces">Doces</option>
+                              <option value="sopas">Sopas</option>
+                              <option value="drinks">Drinks</option>
+                              <option value="bebidas">Bebidas</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="nome_receita">Nome da Receita:</label>
+                            <input type="text" id="nome_receita" name="nome_receita">
+                          </div>
+                          <div class="form-group">
+                            <label for="receita">Receita:</label>
+                            <textarea id="receita" name="receita"></textarea>
+                          </div>
+                          <button type="button" class="btn btn-primary" onclick="enviarReceita()">Enviar</button>
                         </div>
-                    </div>
-
+                      </div>
                     <h6>Sobre</h6>
                     <p class="text-justify">Descubra </p>
                 </div>
@@ -369,7 +368,7 @@
                 <div class="col-xs-6 col-md-3">
                     <h6>Outros</h6>
                     <ul class="footer-links">
-
+                        
                         <li><a href="">Sobre nós</a></li>
                         <li><a href="">Nos contate</a></li>
                         <li><a href="">Contribuintes</a></li>

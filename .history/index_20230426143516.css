@@ -53,14 +53,14 @@ body {
 }
 
 .header {
-	box shadow: 10px;
+	box: shadow 10px;
 }
 
 .header {
 	background-color: #f3c6b9;
 	asdasdsada
 	/*AJUTAR COR*/
-	box-shadow: 100px;
+	box-shadow: 100px#272727;
 	height: 1.5;
 	justify-content: space-between;
 	padding: 0 8%;
@@ -1136,13 +1136,17 @@ body {
 }
 
 .btn-primary:hover {
+
 	background-color: rgba(153, 149, 136, 0.5);
 	padding: 10px;
 	border-radius: 10px;
 	transition: 0.4s;
+
 }
 
-.popup2 {
+
+
+.popup2{
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -1168,7 +1172,7 @@ body {
 	margin-bottom: 20px;
 }
 
-label {
+label2 {
 	font-weight: bold;
 }
 
@@ -1185,7 +1189,7 @@ textarea {
 	height: 200px;
 }
 
-.btn2 {
+.btn {
 	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
@@ -1193,14 +1197,14 @@ textarea {
 	color: #fff;
 }
 
-.btn2-primary {
+.btn-primary {
 	background-color: #007bff;
 }
 
 .close {
 	position: absolute;
 	top: 10px;
-	right: 1px;
+	right: 20px;
 	font-size: 28px;
 	font-weight: bold;
 	cursor: pointer;

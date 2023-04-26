@@ -1136,13 +1136,17 @@ body {
 }
 
 .btn-primary:hover {
+
 	background-color: rgba(153, 149, 136, 0.5);
 	padding: 10px;
 	border-radius: 10px;
 	transition: 0.4s;
+
 }
 
-.popup2 {
+
+
+.popup2{
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -1168,20 +1172,20 @@ body {
 	margin-bottom: 20px;
 }
 
-label {
+label2 {
 	font-weight: bold;
 }
 
-input,
-textarea,
-select {
+input2,
+textarea2,
+select2 {
 	padding: 10px;
 	border: none;
 	border-radius: 5px;
 	background-color: #f2f2f2;
 }
 
-textarea {
+textarea2 {
 	height: 200px;
 }
 
@@ -1193,14 +1197,14 @@ textarea {
 	color: #fff;
 }
 
-.btn2-primary {
+.btn-primary2 {
 	background-color: #007bff;
 }
 
-.close {
+.close2 {
 	position: absolute;
 	top: 10px;
-	right: 1px;
+	right: 20px;
 	font-size: 28px;
 	font-weight: bold;
 	cursor: pointer;
