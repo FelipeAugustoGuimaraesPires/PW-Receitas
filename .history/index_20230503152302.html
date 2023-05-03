@@ -312,7 +312,7 @@
 
     <div class="Enviados">Enviados</div>
 
-    <div class="grid-container" id="SendRecipes" >
+    <div class="grid-container">
         <div class="receita">
             <div class="nome-receita">Cheesecake</div>
             <a id="receita_escitaa" href="#">
@@ -328,7 +328,19 @@
         </div>
     </div>
     <div>
-        
+        <div class="edit-card">
+            <h3 class="edit-card-title">Editar Receita</h3>
+            <form class="edit-card-form">
+                <label class="edit-card-label" for="nome_receita">Nome da Receita:</label>
+                <input class="edit-card-input" type="text" id="nome_receita" name="nome_receita" required>
+                <label class="edit-card-label" for="receita">Descrição da Receita:</label>
+                <textarea class="edit-card-input" id="receita" name="receita" required></textarea>
+                <div class="edit-card-buttons">
+                    <button class="edit-card-button edit-card-save">Salvar</button>
+                    <button class="edit-card-button edit-card-cancel">Cancelar</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="grid-container">
 

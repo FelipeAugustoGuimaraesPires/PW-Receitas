@@ -1290,7 +1290,7 @@ textarea {
 }
 
 .edit-card {
-	background-color: #3f0101;
+	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 16px;
@@ -1300,6 +1300,21 @@ textarea {
 	transform: translate(-50%, -50%);
 	width: 400px;
 	display: flex;
+}
+
+.edit-card-title {
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+.edit-card-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.edit-card-label {
+	font-size: 16px;
+	margin-bottom: 8px;
 }
 
 .edit-card-input {
@@ -1315,6 +1330,16 @@ textarea {
 	justify-content: space-between;
 }
 
+.edit-card-button {
+	background-color: #007bff;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 16px;
+	transition: background-color 0.2s;
+}
 
 .edit-card-button:hover {
 	background-color: #0069d9;

@@ -1302,6 +1302,18 @@ textarea {
 	display: flex;
 }
 
+
+
+.edit-card-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.edit-card-label {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
 .edit-card-input {
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -1315,6 +1327,16 @@ textarea {
 	justify-content: space-between;
 }
 
+.edit-card-button {
+	background-color: #007bff;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 16px;
+	transition: background-color 0.2s;
+}
 
 .edit-card-button:hover {
 	background-color: #0069d9;

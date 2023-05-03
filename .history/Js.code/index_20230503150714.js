@@ -76,11 +76,5 @@ const fecharPopup = () => {
   popup2.style.display = 'none';
 };
 
-function enviarReceita() {
-  alert("Receita enviada com sucesso!");
-  fecharPopup();
-}
 
-function abrirPopup2() {
-  popup2.style.display = 'block';
-}
+

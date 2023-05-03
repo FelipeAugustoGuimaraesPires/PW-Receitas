@@ -1316,26 +1316,3 @@ textarea {
 }
 
 
-.edit-card-button:hover {
-	background-color: #0069d9;
-}
-
-.edit-card-save {
-	background-color: #28a745;
-}
-
-.edit-card-save:hover {
-	background-color: #218838;
-}
-
-.edit-card-cancel {
-	background-color: #dc3545;
-}
-
-.edit-card-cancel:hover {
-	background-color: #c82333;
-}
-
-.edit-card {
-	display: none;
-}
