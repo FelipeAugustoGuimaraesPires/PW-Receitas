@@ -23,7 +23,7 @@ function atualizarGrid() {
         card.classList.add('card');
 
         const imagem = document.createElement('img');
-        imagem.src = receita.imagem;
+       
         imagem.alt = receita.nome;
 
         const cardInfo = document.createElement('div');
@@ -103,6 +103,6 @@ function enviarReceita() {
     const nomeReceita = document.querySelector('#nome_receita').value;
     const receita = document.querySelector('#receita').value;
 
-    adicionarReceita(nomeReceita, receita);
+   
     fecharPopup();
 }

@@ -1236,7 +1236,38 @@ textarea {
 	border-color: #fff;
 }
 
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	background-color: #fff;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
 
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.card-info {
+	padding: 20px;
+}
+
+.card-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.card-description {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
 
 .btn-editar,
 .btn-excluir {
@@ -1258,6 +1289,18 @@ textarea {
 	opacity: 0.8;
 }
 
+.edit-card {
+	background-color: #3f0101;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	display: flex;
+}
 
 
 
@@ -1289,55 +1332,4 @@ textarea {
 
 .edit-card {
 	display: none;
-}
-
-.edit-card  {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 250px;
-	background-color: #f2f2f2;
-	border-radius: 5px;
-	overflow: hidden;
-}
-
-.edit-card {
-	height: 150px;
-	width: 150px;
-	object-fit: cover;
-	border-radius: 50%;
-	cursor: pointer;
-
-}
-
-.edit-card  {
-	margin-top: 10px;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-align: center;
-	cursor: pointer;
-}
-
-.card {
-  width: 300px;
-  height: 200px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  overflow: hidden;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 0 10px;
-}
-
-.card-description {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

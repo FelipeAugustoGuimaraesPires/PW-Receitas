@@ -2,11 +2,11 @@
 let receitas = [];
 
 
-function adicionarReceita(nome, descricao, imagem) {
+function adicionarReceita(nome, descricao) {
     receitas.push({
         nome: nome,
         descricao: descricao,
-        imagem: imagem
+        
     });
 
     atualizarGrid();
@@ -23,7 +23,7 @@ function atualizarGrid() {
         card.classList.add('card');
 
         const imagem = document.createElement('img');
-        imagem.src = receita.imagem;
+       
         imagem.alt = receita.nome;
 
         const cardInfo = document.createElement('div');
@@ -103,6 +103,6 @@ function enviarReceita() {
     const nomeReceita = document.querySelector('#nome_receita').value;
     const receita = document.querySelector('#receita').value;
 
-    adicionarReceita(nomeReceita, receita);
+   
     fecharPopup();
 }

@@ -103,6 +103,6 @@ function enviarReceita() {
     const nomeReceita = document.querySelector('#nome_receita').value;
     const receita = document.querySelector('#receita').value;
 
-    adicionarReceita(nomeReceita, receita);
+   
     fecharPopup();
 }

@@ -13,7 +13,7 @@ function adicionarReceita(nome, descricao, imagem) {
 }
 
 function atualizarGrid() {
-    const gridContainer = document.querySelector('#SendRecipes');
+    const gridContainer = document.querySelector('SendRecipes');
     gridContainer.innerHTML = '';
 
     for (let i = 0; i < receitas.length; i++) {
@@ -99,10 +99,11 @@ function atualizarGrid() {
 
 function enviarReceita() {
     const nome = document.querySelector('#nome').value;
+    const email = document.querySelector('#email').value;
     const tipoReceita = document.querySelector('#tipo_receita').value;
     const nomeReceita = document.querySelector('#nome_receita').value;
     const receita = document.querySelector('#receita').value;
 
-    adicionarReceita(nomeReceita, receita);
+    adicionarReceita(nomeReceita, receita, 'imagem-da-receita.jpg');
     fecharPopup();
 }

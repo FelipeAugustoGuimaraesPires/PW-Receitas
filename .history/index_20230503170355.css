@@ -1299,7 +1299,10 @@ textarea {
 	height: 250px;
 	background-color: #f2f2f2;
 	border-radius: 5px;
+	
+	white-space: nowrap;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .edit-card {
@@ -1319,25 +1322,25 @@ textarea {
 	cursor: pointer;
 }
 
-.card {
-  width: 300px;
-  height: 200px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  overflow: hidden;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 0 10px;
-}
-
-.card-description {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.edit-card {
+	width: 300px;
+	height: 200px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	overflow: hidden;
+  }
+  
+  .edit-card{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 10px;
+  }
+  
+  .edit-card{
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }

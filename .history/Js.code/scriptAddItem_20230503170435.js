@@ -98,7 +98,7 @@ function atualizarGrid() {
 }
 
 function enviarReceita() {
-    const nome = document.querySelector('#nome').value;
+    
     const tipoReceita = document.querySelector('#tipo_receita').value;
     const nomeReceita = document.querySelector('#nome_receita').value;
     const receita = document.querySelector('#receita').value;

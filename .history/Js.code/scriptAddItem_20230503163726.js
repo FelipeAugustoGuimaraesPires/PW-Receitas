@@ -6,7 +6,7 @@ function adicionarReceita(nome, descricao, imagem) {
     receitas.push({
         nome: nome,
         descricao: descricao,
-        imagem: imagem
+        
     });
 
     atualizarGrid();
@@ -22,9 +22,7 @@ function atualizarGrid() {
         const card = document.createElement('div');
         card.classList.add('card');
 
-        const imagem = document.createElement('img');
-        imagem.src = receita.imagem;
-        imagem.alt = receita.nome;
+        
 
         const cardInfo = document.createElement('div');
         cardInfo.classList.add('card-info');
@@ -99,6 +97,7 @@ function atualizarGrid() {
 
 function enviarReceita() {
     const nome = document.querySelector('#nome').value;
+    const email = document.querySelector('#email').value;
     const tipoReceita = document.querySelector('#tipo_receita').value;
     const nomeReceita = document.querySelector('#nome_receita').value;
     const receita = document.querySelector('#receita').value;
